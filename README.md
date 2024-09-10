@@ -1,33 +1,20 @@
-# itachi-refact
+<div align="center">
+<img src="./public/logo.png" >
+</div>
+<h1 align="center">Itachi Refact</h1>
+<h3 align="center">An intelligent bot powered by Claude-AI, designed to automatically refactor code in pull requests for optimization and best practices before merging, ensuring cleaner, more efficient code integration.</h3>
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that A bot for refactoring the code of pull requests before merging
+<h4 align="center"><a href="https://github.com/apps/itachi-refact">Install Itachi Refact Bot</a></h4>
 
-## Setup
 
-```sh
-# Install dependencies
-npm install
+## Configuration
 
-# Run the bot
-npm start
-```
+1. Go to the repository where you want to use this bot.
 
-## Docker
+2. Click `Settings`.
 
-```sh
-# 1. Build container
-docker build -t itachi-refact .
+3. Click` Actions` under `Secrets and Variables`.
 
-# 2. Start container
-docker run -e APP_ID=<app-id> -e PRIVATE_KEY=<pem-value> itachi-refact
-```
+4. Switch to the `Variables` tab and create a new variable, `ANTHROPIC_API_KEY`, with the value of your Anthropic API key.
 
-## Contributing
-
-If you have suggestions for how itachi-refact could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
-
-For more, check out the [Contributing Guide](CONTRIBUTING.md).
-
-## License
-
-[ISC](LICENSE) © 2024 Ala
+<img src="./public/config-steps.png" >
